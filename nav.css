@@ -59,3 +59,7 @@ nav a:hover{
 	border-bottom: 2px solid #000;
 }
 
+nav h3{
+	display: none;
+}
+
