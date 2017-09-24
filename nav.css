@@ -1,0 +1,61 @@
+html,
+body{
+	font-family: helvetica,sans-serif;
+	font-size:1em;
+	line-height: 1.4rem;
+	margin: 0;
+	padding: 0;
+
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+/*.container{
+	overflow: hidden;
+	*zoom: 1;
+	margin: 0 20px;
+
+} */
+
+header{
+	border-bottom:solid 1px rgba(50,50,50,.3);
+	background-color:rgba(255,255,255,1);
+	width: 100%;
+	height: 110px;
+	z-index: 10;
+	line-height: 110px;
+	color: #000;
+	overflow:hidden;
+}
+.header_logo img{
+	width: 200px !important;
+	height: auto;
+	margin:32px 15px 10px 40px;
+	float: left;
+}
+
+
+/*Menyen*/
+
+nav a{
+	text-decoration: none;
+	position: relative;
+	color:#000;
+	margin: 0 10px;
+	padding:4px 3px 4px 3px;
+	font-size:1.2em;
+	border-bottom:2px #fff solid;
+
+	-o-transition: border 0.4s ease-out;/*Opera*/
+	-ms-transition: border 0.4s ease-out;/*Microsoft*/
+	-moz-transition: border 0.4s ease-out;/*Mozilla*/
+	-webkit-transition: border 0.4s ease-out;/*Chrome + safari*/
+}
+
+nav a:hover{
+	border-bottom: 2px solid #000;
+}
+
