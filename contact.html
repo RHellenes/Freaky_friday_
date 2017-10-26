@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Freaky Friday assignment</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<!-- Normalize er lagt inn for å nullstille evt. forskjeller i html- attributter som er definert i css'en.-->
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<!-- Egen css for navigasjonen fordi denne er stor, og det vil bli lettere å ha oversikt over css'en på denne måten-->
+	<link rel="stylesheet" type="text/css" href="global.css">
+	<!-- Global.css er hoved css'en som blir brukt på alt unntatt navigasjonen. -->
+	<meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+	<div class="site-container">
+		<div class="left_site_pusher">
+			
+			<header>
+				
+				<a  href="#" class="menu_icon" id="menu_icon" onclick="sidebar()"></a>
+				<a href="index.html"><span class="logo">< M.Hagen ></span></a>
+				<!--Hamburger meny og logo i header -->
+
+				<nav>
+					<h3>Menu<br>{</h3>
+					<a href="index.html">[ Home ]</a>
+					<a href="#">[ Portfolio ]</a>
+					<a href="#">[ Blog ]</a>
+					<a href="about.html">[ About ]</a>
+					<a href="contact.html">[ Contact ]</a>
+					<h3>}</h3>
+
+				</nav>
+
+			</header>
+
+			<main>
+				<div class="top_background"></div>
+					
+				<section>
+					
+
+					<div class="front_page_article">
+
+						<div class="content">
+							<img class="header_img" src="images/other/contact_header.jpg" alt="A picture of an old phone inside a phonebooth">
+						<div class="text_field">
+								<h1>Contact information</h1>
+								
+								<div class="two_spalt">
+					<h3>Kontaktopplysninger<br>{</h3>
+					<ul>
+						<li>Telefon: 12345678</li>
+						<li>Email: <a href="#" class="email_link">kontakt@mhagen.com</a></li>
+						<li>Adresse: Pilestredet 35 Oslo</li>
+						<li>Åpningstider: Man-Fre: 08.00-16.00</li>
+					</ul>
+					<h3>}</h3>
+				</div>
+				<div class="two_spalt">
+					<a href="https://www.google.com/maps/place/Pilestredet+35,+0166+Oslo,+Norway/@59.91957,10.7333731,17z/data=!3m1!4b1!4m5!3m4!1s0x46416e7bfda9fef5:0xeb52212b55331cb5!8m2!3d59.91957!4d10.7355618?hl=en">
+						<img src="images/other/map.svg" alt="Illustrated map, with the location of M.Hagen's office, linked to google maps.">
+					</a>
+				</div>
+				</section>
+			</main>
+			
+
+			<footer>
+				
+				<div class="one_spalt">
+					<h3>Sitemap<br>{</h3>
+					<ul>
+						<a href="#"><li>Portfolio</li></a>
+						<a href="#"<li>Blog</a>
+							<ul id="blog_ul">
+								<a href="#"><li>Programming</li></a>
+								<a href="#"><li>UX-Design</li></a>
+								<a href="#"><li>Surviving as a student</li></a>
+							</ul>
+						</li>
+						<a href="about.html"><li>About</li></a>
+						<a href="contact.html"><li>Contact</li></a>
+						
+					</ul>
+					<h3>}</h3>
+				</div>
+
+			</footer>
+			<div class="skygge" id="skygge" onclick="removeSidebar()"></div>
+		</div> <!-- Avslutter left_site_pusher-->
+
+	</div>
+
+
+	<script type="text/javascript" src="scripts/mobile_menu.js">
+	</script>
+
+</body>
+</html>

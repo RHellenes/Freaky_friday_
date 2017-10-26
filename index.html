@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="NO">
+<html lang="en">
 
 <head>
-	<meta charset="UFT-8">
+	<meta charset="utf-8">
 	<title>Freaky Friday assignment</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<!-- Normalize er lagt inn for å nullstille evt. forskjeller i html- attributter som er definert i css'en.-->
@@ -10,31 +10,184 @@
 	<!-- Egen css for navigasjonen fordi denne er stor, og det vil bli lettere å ha oversikt over css'en på denne måten-->
 	<link rel="stylesheet" type="text/css" href="global.css">
 	<!-- Global.css er hoved css'en som blir brukt på alt unntatt navigasjonen. -->
+	<meta name="viewport" content="width=device-width"/>
 </head>
-<body id="body">
-	<main>
+<body class="body">
+	<div class="site-container">
 		<div class="left_site_pusher">
+			
 			<header>
 				
-				<a  href="#" class="menu_icon" id="menu_icon"></a>
-				<a href="index.html" class="header_logo"><img src="images/header_logo.svg"></a>
+				<a  href="#" class="menu_icon" id="menu_icon" onclick="sidebar()"></a>
+				<a href="index.html"><span class="logo">< M.Hagen ></span></a>
 				<!--Hamburger meny og logo i header -->
 
 				<nav>
-					<h3>Menu</h3>
-					<a href="index.html">Home</a>
-					<a href="#">Portfolio</a>
-					<a href="#">Blog</a>
-					<a href="#">About</a>
-					<a href="#">Contact</a>
+					<h3>Menu<br>{</h3>
+					<a href="index.html">[ Home ]</a>
+					<a href="#">[ Portfolio ]</a>
+					<a href="#">[ Blog ]</a>
+					<a href="about.html">[ About ]</a>
+					<a href="contact.html">[ Contact ]</a>
+					<h3>}</h3>
 
 				</nav>
 
 			</header>
-			<div class="site-cache" id="site-cache"></div>
+
+			<main>
+				<div class="top_background">
+					
+				</div>
+				<section>
+					<div class="front_page_article">
+					
+						<!-- <img id="svart_logo" src="images/logo/svart_logo.svg"> -->
+
+
+						<div class="content">
+							<img class="header_img" src="images/other/Article_1_header.jpg" alt="A picture of a persons screen with HTML and PHP code on it.">
+
+							<div class="text_field">
+								<h1>State of the art PHP</h1>
+								<h2>(or atleast functional PHP)</h2>
+								<p>
+									Modicid milit que del evelecu stibusant molorrupta nost aut explantur reptatem. Em esectur, que comnihi lignienis eossit, natia nus.
+									Ut esed explique cuptatia quatur adisi nos voloreprovit ex ereraerem sim rehent qui con renisquiaepe veritaeriore volestibus nisquam, volorem repeligniam nim ius illorit pro eum es restio. Est, ventianimet veliate con cusciaestios doluptaquid quae veles maiorrum rem rem se esendem volent ea non pre, omnia est, offic tecto blacesto to omnimus ipit
+								</p>
+
+							</div>
+							<a href="#"><div class="btn">Read more</div></a>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="front_page_article">
+
+						<div class="content">
+							<img class="header_img" src="images/other/Article_2_header.jpg" alt="A picture of a messy desk with a persons hands in it, indicating that he is working on a project">
+
+							<div class="text_field">
+								<h1>Ground breaking UX-Design</h1>
+								<h2>(Intro to UX-Design)</h2>
+								<p>
+									Modicid milit que del evelecu stibusant molorrupta nost aut explantur reptatem. Em esectur, que comnihi lignienis eossit, natia nus.
+									Ut esed explique cuptatia quatur adisi nos voloreprovit ex ereraerem sim rehent qui con renisquiaepe veritaeriore volestibus nisquam, volorem repeligniam nim ius illorit pro eum es restio. Est, ventianimet veliate con cusciaestios doluptaquid quae veles maiorrum rem rem se esendem volent ea non pre, omnia est, offic tecto blacesto to omnimus ipit
+								</p>
+
+							</div>
+							<a href="#"><div class="btn">Read more</div></a>
+						</div>
+					</div>
+				</section>
+
+				<div class="new_content">
+				<h1>Recently added content:</h1>
+				<div class="content_data">
+					<a href="#">
+						<span class="category">
+							Programming:
+						</span>
+						<span class="content_title">
+							Responsive forms
+						</span>
+						<span class="date_added">	24.08.17
+						</span>
+					</a>
+				</div>
+				<div class="content_data">
+					<a href="#">
+						<span class="category">
+							UX Design:
+						</span>
+						<span class="content_title">
+							Case study of Dropbox
+						</span>
+						<span class="date_added">	16.07.17
+						</span>
+					</a>
+				</div>
+				<div class="content_data">
+					<a href="#">
+						<span class="category">
+							Portfolio:
+						</span>
+						<span class="content_title">
+							Conceptual nav versions
+						</span>
+						<span class="date_added">	05.07.17
+						</span>
+					</a>
+				</div>
+				<div class="content_data">
+					<a href="#">
+						<span class="category">
+							Portfolio:
+						</span>
+						<span class="content_title">
+							Self initiated website for IBM
+						</span>
+						<span class="date_added">	06.05.17
+						</span>
+					</a>
+				</div>
+				<div class="content_data">
+					<a href="#">
+						<span class="category">
+							Programming:
+						</span>
+						<span class="content_title">
+							Mini-usergenerated website
+						</span>
+						<span class="date_added">	05.12.17
+						</span>
+					</a>
+				</div>
+			</div>
+			</main>
+			
+
+			<footer>
+				<div class="two_spalt">
+					<h3>Kontaktopplysninger<br>{</h3>
+					<ul>
+						<li>Telefon: 12345678</li>
+						<li>Email: <a href="#" class="email_link">kontakt@mhagen.com</a></li>
+						<li>Adresse: Pilestredet 35 Oslo</li>
+						<li>Åpningstider: Man-Fre: 08.00-16.00</li>
+					</ul>
+					<h3>}</h3>
+				</div>
+				<div class="two_spalt">
+					<a href="https://www.google.com/maps/place/Pilestredet+35,+0166+Oslo,+Norway/@59.91957,10.7333731,17z/data=!3m1!4b1!4m5!3m4!1s0x46416e7bfda9fef5:0xeb52212b55331cb5!8m2!3d59.91957!4d10.7355618?hl=en">
+						<img src="images/other/map.svg" alt="Illustrated map, with the location of M.Hagen's office, linked to google maps.">
+					</a>
+				</div>
+				<div class="one_spalt">
+					<h3>Sitemap<br>{</h3>
+					<ul>
+						<a href="#"><li>Portfolio</li></a>
+						<a href="#"<li>Blog</a>
+							<ul id="blog_ul">
+								<a href="#"><li>Programming</li></a>
+								<a href="#"><li>UX-Design</li></a>
+								<a href="#"><li>Surviving as a student</li></a>
+							</ul>
+						</li>
+						<a href="about.html"><li>About</li></a>
+						<a href="contact.html"><li>Contact</li></a>
+						
+					</ul>
+					<h3>}</h3>
+				</div>
+
+			</footer>
+			<div class="skygge" id="skygge" onclick="removeSidebar()"></div>
 		</div> <!-- Avslutter left_site_pusher-->
 
-	</main>
-	<script type="text/javascript" src="scripts/mobile_menu.js"></script>
+	</div>
+
+	<script type="text/javascript" src="scripts/mobile_menu.js">
+	</script>
 </body>
 </html>
